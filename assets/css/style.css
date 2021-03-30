@@ -1,0 +1,87 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+body {
+  background: var(--preta);
+  font-family: "Arial", Times, serif;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: #aaa;
+  margin-right: 10px;
+  transition: 1s ease;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+}
+.filmePrincipal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url(../imagens/houseofcards.jpg);
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: cover;
+}
+.titulo {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.descricao {
+  margin-bottom: 1rem;
+}
+
+.botao {
+  background-color: rgba(129, 92, 92, 0.74);
+  padding: 1rem;
+  color: white;
+  margin-right: 1rem;
+  transition: 1s ease all;
+}
+
+.botao:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.fa-play,
+.fa-info-circle {
+  color: #aaa;
+  margin-right: 0.5rem;
+}
+
+.carrosel {
+  margin-top: 2rem;
+}
+
+.box-filme {
+  width: 90px;
+  height: 90%;
+  display: block;
+}
